@@ -2,6 +2,7 @@
   "name": "Scrim-s0507kc",
   "description": "https://scrimba.com/learn-react-legacy-c003ni72th/~045",
   "scripts": {
+    "dev": "react-scripts start",
     "watch": "webpack -w",
     "build": "webpack"
   },
@@ -15,5 +16,17 @@
     "babel-loader": "^7.0",
     "babel-preset-env": "*",
     "babel-preset-react": "*"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

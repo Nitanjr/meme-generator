@@ -1,102 +1,195 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Karla", sans-serif;
-    margin: 0;
+  font-family: "Karla", sans-serif;
+  margin: 0;
 }
 
 main {
-    padding: 36px;
+  padding: 36px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    height: 65px;
-    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-    color: white;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 20px;
 }
 
 .header--image {
-    height: 100%;
-    margin-right: 6px;
+  height: 100%;
+  margin-right: 6px;
 }
 
 .header--title {
-    font-size: 1.25rem;
-    margin-right: auto;
+  font-size: 1.25rem;
+  margin: 0;
 }
 
 .header--project {
-    font-size: 0.75rem;
-    font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .form {
-    display: grid;
-    grid-template: 40px 40px / 1fr 1fr;
-    gap: 17px;
-    margin-bottom: 17px;
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin: 0 auto 17px auto;
+  width: 800px;
+  max-width: 100%;
+  padding: 0 10px;
 }
 
 .form--input {
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    border: 1px solid #D5D4D8;
-    text-indent: 5px;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
 }
 
 .form--button {
-    grid-column: 1 / -1;
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    color: white;
-    border: none;
-    cursor: pointer;
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .meme {
-    position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .meme--image {
-    max-width: 100%;
-    border-radius: 3px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  display: block;
 }
 
 .meme--text {
-    position: absolute;
-    width: 80%;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 15px 0;
-    padding: 0 5px;
-    font-family: impact, sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0 2px 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        -2px 0 0 #000,
-        2px 2px 5px #000;
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+  z-index: 1;
 }
 
 .bottom {
-    bottom: 0;
+  bottom: 0;
 }
 
 .top {
-    top: 0;
+  top: 0;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 500px;
+    grid-template: 40px 40px / 1fr 1fr;
+  }
+
+  .meme--image {
+    max-width: 100%;
+  }
+
+  .meme--text {
+    font-size: 1.5em;
+    width: 85%;
+  }
+
+  .header {
+    padding: 15px;
+    height: auto;
+  }
+
+  .header--title {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  main {
+    padding: 15px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 100%;
+    grid-template: 40px / 1fr;
+    gap: 10px;
+    margin: 0 auto 10px auto;
+  }
+
+  .form--input {
+    font-size: 14px;
+  }
+
+  .form--button {
+    font-size: 14px;
+  }
+
+  .meme--image {
+    max-width: 100%;
+  }
+
+  .meme--text {
+    font-size: 1.2em;
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .header--image {
+    margin-right: 3px;
+    height: 40px;
+  }
+
+  .header--title {
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+  }
 }
