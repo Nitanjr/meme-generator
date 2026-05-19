@@ -28,7 +28,7 @@ main {
 
 .header--title {
   font-size: 1.25rem;
-  margin-right: auto;
+  margin: 0;
 }
 
 .header--project {
