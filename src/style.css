@@ -42,6 +42,8 @@ main {
   gap: 17px;
   margin: 0 auto 17px auto;
   width: 800px;
+  max-width: 100%;
+  padding: 0 10px;
 }
 
 .form--input {
@@ -108,4 +110,86 @@ main {
 
 .top {
   top: 0;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 500px;
+    grid-template: 40px 40px / 1fr 1fr;
+  }
+
+  .meme--image {
+    max-width: 100%;
+  }
+
+  .meme--text {
+    font-size: 1.5em;
+    width: 85%;
+  }
+
+  .header {
+    padding: 15px;
+    height: auto;
+  }
+
+  .header--title {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  main {
+    padding: 15px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 100%;
+    grid-template: 40px / 1fr;
+    gap: 10px;
+    margin: 0 auto 10px auto;
+  }
+
+  .form--input {
+    font-size: 14px;
+  }
+
+  .form--button {
+    font-size: 14px;
+  }
+
+  .meme--image {
+    max-width: 100%;
+  }
+
+  .meme--text {
+    font-size: 1.2em;
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .header--image {
+    margin-right: 3px;
+    height: 40px;
+  }
+
+  .header--title {
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+  }
 }
