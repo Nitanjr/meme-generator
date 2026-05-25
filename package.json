@@ -3,19 +3,13 @@
   "description": "https://scrimba.com/learn-react-legacy-c003ni72th/~045",
   "scripts": {
     "dev": "react-scripts start",
-    "watch": "webpack -w",
-    "build": "webpack"
+    "build": "react-scripts build"
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "webpack": "^2.0"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "babel-core": "^6.0",
-    "babel-loader": "^7.0",
-    "babel-preset-env": "*",
-    "babel-preset-react": "*",
     "react-scripts": "5.0.1"
   },
   "browserslist": {
